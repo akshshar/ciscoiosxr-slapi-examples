@@ -1,0 +1,21 @@
+!! XR configuration
+!
+interface GigabitEthernet0/0/0/0
+ip address 11.1.1.10/24
+no shutdown
+!
+interface GigabitEthernet0/0/0/1
+ip address 12.1.1.10/24
+no shutdown
+!
+interface GigabitEthernet0/0/0/2
+ip address 13.1.1.10/24
+no shutdown
+!
+grpc 
+  port 57344
+  address-family ipv4
+  service-layer
+!
+!
+end
