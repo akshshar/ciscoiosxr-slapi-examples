@@ -19,7 +19,7 @@ from genpy import sl_common_types_pb2
 from grpc.beta import implementations
 
 # Utilities
-from tutorial import client_init
+import client_init
 
 #
 # VRF operations
