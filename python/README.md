@@ -4,7 +4,9 @@ The Examples in this directory cover the python GRPC client examples for the fol
 2)  MPLS ILM  (IPv4)
 3)  Interface Event Streaming
 
-To execute the examples, place the generated python bindings under `/genpy` folder of the cloned repository.
+To execute the examples, place the generated python bindings under `/genpy` folder of the cloned repository.  
+  
+**Check out the README.md under the `vagrant/` folder of the cloned repository to spin up your own vagrant environments to play with the python examples shown here**
 
 Set the GRPC Server Port and Server IP (running on an IOS-XR) instance as environment variables:
 
