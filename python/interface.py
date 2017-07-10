@@ -1,7 +1,20 @@
- 
-# Copyright (c) 2016 by cisco Systems, Inc.
+# Copyright (c) 2016 by Cisco Systems, Inc.
 # All rights reserved.
 #
+
+"""
+This example explores the interface vertical of the IOS-XR SL-API.
+
+A background thread will be launched by this example to listen to interface 
+notification events for registered interfaces ( see intf_enable_notif() )
+
+To test that the notification events get streamed to the client, issue a 'shut'
+on one of the registered interfaces.
+
+To terminate the program, issue a ^C in the running window.
+
+"""
+
 
 import ipaddress
 import os
@@ -79,7 +92,6 @@ def intf_get_stats(stub):
     print response
 
 def intf_enable_notif(stub):
-#    SL_NOTIFOP_ENABLE
 
     intf_notif_op = sl_interface_pb2.SLInterfaceNotifMsg()
 
